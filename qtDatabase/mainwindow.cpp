@@ -25,16 +25,27 @@ void MainWindow::Connection(){
 
 void MainWindow::on_pushButton_clicked()
 {
-    QString username,password;
+    QString username,password,Repass;
     username = ui->lineEdit->text();
     password = ui->lineEdit_2->text();
-
-    QSqlQuery query;
-    if(query.exec("select * from Data where Type = '"+username+"' and name = '"+password+"'"))
+    Repass = ui->lineEdit_3->text();
+    if(password != Repass)
     {
-        ui->label->setText("Correct.");
-
-    }else{
-         ui->label->setText("inCorrect.");
+        ui->label->setText("Password don't same.");
     }
+    else {
+    QSqlQuery query;
+    query.exec("INSERT INTO users (username,password) VALUES ('"+username+"', '"+password+"')");
+    form.show();
+    this->close();
+    //    ui->label->setText("Success.");
+
+//        while (query.next()) {
+//                QString Type = query.value(0).toString();
+//                QString name =  query.value(1).toString();
+//                double weight =  query.value(2).toDouble();
+//                qDebug() << Type<<name<<weight;
+//            }
+
+}
 }

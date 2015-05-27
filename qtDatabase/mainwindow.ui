@@ -57,7 +57,7 @@ border-radius:20px;</string>
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>90</y>
+       <y>20</y>
        <width>101</width>
        <height>51</height>
       </rect>
@@ -69,8 +69,8 @@ border-radius:20px;</string>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>140</y>
+       <x>60</x>
+       <y>70</y>
        <width>111</width>
        <height>61</height>
       </rect>
@@ -82,8 +82,8 @@ border-radius:20px;</string>
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>100</y>
+       <x>190</x>
+       <y>30</y>
        <width>311</width>
        <height>27</height>
       </rect>
@@ -97,16 +97,22 @@ background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>150</y>
+       <x>190</x>
+       <y>90</y>
        <width>311</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton">
@@ -123,21 +129,50 @@ background-color: rgb(255, 255, 255);</string>
  border-radius: 28px;</string>
      </property>
      <property name="text">
-      <string>Login</string>
+      <string>Register.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;RE-Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>150</y>
+       <width>311</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
      </property>
     </widget>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>250</x>
       <y>0</y>
-      <width>321</width>
+      <width>141</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;Please Select User&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;Register&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
